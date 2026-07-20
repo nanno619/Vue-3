@@ -15,7 +15,14 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <!-- v-bind/: (shorthand) -->
+            <!-- Dynamically bind an attribute to an expression -->
+            <!-- src -> attribute -->
+            <!-- "image" -> expression -->
+            <!-- {{ }} cannot be used inside HTML attributes -->
+          <a :href="url" target="_blank">
+            <img :src="image" alt="">
+          </a>
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
